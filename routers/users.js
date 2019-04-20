@@ -44,7 +44,18 @@ router.post('/', async (req, res) => {
 });
 
 //Show Route
-
+router.get('/:id', async (req, res) => {
+    try {
+        const foundUser = await User.findById(req.params.id);
+        res.json({
+            status: 200,
+            data: foundUser
+        });
+    } catch (err) {
+        console.log(err);
+        res.send(err);
+    }
+});
 
 //Update Route
 
