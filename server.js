@@ -12,6 +12,7 @@ require('./db/db');
 
 const authRouter = require('./routers/auth');
 const usersRouter = require('./routers/users');
+const imageRouter = require('./routers/image');
 
 /********** MIDDLEWARE **********/
 app.use(session({
@@ -31,10 +32,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
+app.use('/uploads', express.static('uploads'));
 
 /********** ROUTERS/CONTROLLERS **********/
 app.use('/auth', authRouter);
 app.use('/users', usersRouter);
+app.use('/image', imageRouter);
 
 /********** LISTENER **********/
 app.listen(process.env.PORT, () => {
