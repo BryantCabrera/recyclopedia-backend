@@ -10,6 +10,7 @@ const cors = require('cors');
 
 require('./db/db');
 
+const authRouter = require('./routers/auth');
 const usersRouter = require('./routers/users');
 
 /********** MIDDLEWARE **********/
@@ -32,6 +33,7 @@ app.use(methodOverride('_method'));
 app.use(express.static('public'));
 
 /********** ROUTERS/CONTROLLERS **********/
+app.use('/auth', authRouter);
 app.use('/users', usersRouter);
 
 /********** LISTENER **********/
