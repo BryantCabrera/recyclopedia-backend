@@ -58,7 +58,18 @@ router.get('/:id', async (req, res) => {
 });
 
 //Update Route
-
+router.put('/:id', async (req, res) => {
+    try {
+        const updatedUser = await User.findByIdAndUpdate(req.params.id, req.body, { new: true });
+        res.json({
+            status: 200,
+            data: updatedUser
+        });
+    } catch (err) {
+        console.log(err);
+        res.send(err);
+    }
+});
 
 //Delete Route
 
