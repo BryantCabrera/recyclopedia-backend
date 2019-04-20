@@ -1,0 +1,20 @@
+{
+  "name": "recyclopedia-backend",
+  "version": "1.0.0",
+  "description": "## A. Description Recyclopedia is a full stack app built by  1. Michael Siller - Full Stack Software Engineer 2. Alex Binaei 3. Bryant Cabrera - Full Stack Software Engineer 4. Kevin Cuison - Front-End Software Engineer 5. Nic Jedema -  6. Teni Asewumi -  7. Colton Orr -",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryantCabrera/recyclopedia-backend.git"
+  },
+  "author": "Bryant Cabrera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryantCabrera/recyclopedia-backend/issues"
+  },
+  "homepage": "https://github.com/BryantCabrera/recyclopedia-backend#readme"
+}
