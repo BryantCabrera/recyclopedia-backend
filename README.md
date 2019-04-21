@@ -1,7 +1,7 @@
 # recyclopedia-backend
 
 ## A. Description
-Recyclopedia is a full stack app built by 
+Recyclopedia is a full stack app built in 2 days by 
 1. Nic Jedema - 
 2. Bryant Cabrera - Full Stack Software Engineer
 3. Kevin Cuison - Front-End Software Engineer
