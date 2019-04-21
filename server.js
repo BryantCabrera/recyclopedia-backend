@@ -22,7 +22,7 @@ app.use(session({
 }));
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'https://recyclopedia-frontend.herokuapp.com/'],
+    origin: ['http://localhost:3000', 'https://recyclopedia-frontend.herokuapp.com'],
     credentials: true,
     optionsSuccessStatus: 200
 }
