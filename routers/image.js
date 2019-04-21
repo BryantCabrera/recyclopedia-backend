@@ -77,4 +77,6 @@ imageRouter.route("/uploadbase")
             .catch((err) => next(err));
     });
 
+//experimental Post to Image Scan API goes here
+
 module.exports = imageRouter;
