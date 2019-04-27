@@ -9,7 +9,6 @@ Recyclopedia is a full stack app built in 2 days by
 5. Alex Binaei -
 6. Teni Asewumi - Chief Research Officer
 7. Colton Orr - Chief Business Officer
-8. Patrick Carroll - React Native Engineer
 
 ## B. User Stories
 
@@ -73,7 +72,11 @@ Recyclopedia is a full stack app built in 2 days by
         2.	public
 6.  If you need to completely delete a branch
     1. $git branch -D {without the curly braces, the branch name you want to delete}
-7.	When you are 100% sure your data is ready to be merged into the master copy, make sure you are on *__YOUR OWN BRANCH__* (lower left of VScode), call Bryant to let him know you're merging, then:
+7. If you need to work on an old branch:
+    1. $git checkout {without the curly braces, the branch name}
+    2. $git merge master
+    3. continue editing and commiting with normal workflow
+8.	When you are 100% sure your data is ready to be merged into the master copy, make sure you are on *__YOUR OWN BRANCH__* (lower left of VScode), call Bryant to let him know you're merging, then:
     1.	$git add -A
     2.	$git commit -m “Adds {put your name here}’s {2-3 word description of the feature/code you made}”
     3.	$git push origin {without the curly braces, branchname}
@@ -84,12 +87,12 @@ Recyclopedia is a full stack app built in 2 days by
             1. in your PERSONAL remote repo, use the dorpdown on the left to switch to the branch that you made updates to
             2.  click the "New Pull Request" button directly to the right of that dropdown menu
             3.  on the new screen, make sure the left side points to the origin master, and the right side points to your personal branch that has your edits
-8.  Make sure your local repo is always in sync.
+9.  Make sure your local repo is always in sync.
     1.  make sure you don't have any pending commits, then
     2.  $git checkout master
     3.  Bryant will let you know when it's ok to $git pull upstream master
     5. $git checkout -b {without the curly braces, your name all in lowercase}-{without these curly braces, put the component you are working on}
-9.	Merging
+10.	Merging
     1.	On master GitHub link
         1.	Click green button called “compare & pull”
         2.	Create pull request

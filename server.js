@@ -22,7 +22,7 @@ app.use(session({
 }));
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'https://recyclopedia-frontend.herokuapp.com'],
+    origin: ['http://localhost:3000', 'https://recyclopedia-frontend.herokuapp.com', 'https://uemzwc64cg.execute-api.us-west-2.amazonaws.com/internal-stage'],
     credentials: true,
     optionsSuccessStatus: 200
 }
